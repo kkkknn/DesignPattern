@@ -12,7 +12,20 @@ public class WordDocument implements Cloneable{
         System.out.println("-----------构造函数-----------");
     }
 
+    //深拷贝
     @Override
+    protected WordDocument clone(){
+        try {
+            WordDocument document=(WordDocument) super.clone();
+            document.mImages=(ArrayList<String>) this.mImages.clone();
+            document.mText=this.mText;
+            return document;
+        }catch (Exception e){
+        }
+        return null;
+    }
+    //浅拷贝
+    /*@Override
     protected WordDocument clone(){
         try {
             WordDocument document=(WordDocument) super.clone();
@@ -22,7 +35,7 @@ public class WordDocument implements Cloneable{
         }catch (Exception e){
         }
         return null;
-    }
+    }*/
 
     public String getmText() {
         return mText;
