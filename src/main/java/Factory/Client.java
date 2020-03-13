@@ -1,6 +1,6 @@
 package Factory;
 
-public class Client {
+public  class Client {
     public static void main(String[] args) {
         AudiFactory audiFactory=new AudiCarFactory();
         AudiQ3 audiQ3=audiFactory.creatAudiCar(AudiQ3.class);
