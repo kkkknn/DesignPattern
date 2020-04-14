@@ -4,6 +4,6 @@ package StateMode;
 public interface TvState {
     public void nextChannel();
     public void prevChannel();
-    public void tuenUp();
+    public void turnUp();
     public void turnDown();
 }
