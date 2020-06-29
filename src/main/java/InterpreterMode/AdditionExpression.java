@@ -5,6 +5,8 @@ public class AdditionExpression extends OperatorExpression {
         super(exp1, exp2);
     }
     public int interpret() {
-        return exp1.interpret()+exp2.interpret();
+        int val=exp1.interpret()+exp2.interpret();
+        System.out.println("+结果"+val);
+        return val;
     }
 }

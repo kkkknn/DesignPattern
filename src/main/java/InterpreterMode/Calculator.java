@@ -18,6 +18,13 @@ public class Calculator {
                     expression1=stack.pop();
                     expression2=new NumExpression(Integer.valueOf(args[++i]));
                     stack.push(new AdditionExpression(expression1,expression2));
+                    System.out.println("加法"+expression1.interpret()+"||"+expression2.interpret());
+                    break;
+                case '-':
+                    expression1=stack.pop();
+                    expression2=new NumExpression(Integer.valueOf(args[++i]));
+                    System.out.println("减法"+expression1.interpret()+"||"+expression2.interpret());
+                    stack.push(new SubtractionExpression(expression1,expression2));
                     break;
                 default: //如果为数字
                     stack.push(new NumExpression(Integer.valueOf(args[i])));

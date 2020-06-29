@@ -4,7 +4,7 @@ import StrategyMode.CalculateStrategy;
 
 public class Client {
     public static void main(String[] args) {
-        Calculator calculator=new Calculator("11 + 22 + 22 + 33");
+        Calculator calculator=new Calculator("66 + 22 - 11");
         System.out.println(calculator.calculate());
     }
 }
