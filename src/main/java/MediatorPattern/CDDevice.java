@@ -10,7 +10,7 @@ public class CDDevice extends Colleague {
         return data;
     }
     public void load(){
-        data="视频数据，音频数据";
+        data="视频数据,音频数据";
         mediator.changed(this);
     }
 
