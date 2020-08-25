@@ -1,6 +1,5 @@
 package IteratorMode;
 
-import java.sql.SQLOutput;
 import java.util.Iterator;
 
 public class Client {
