@@ -4,7 +4,8 @@ import java.lang.reflect.Proxy;
 
 public class Client {
     public static void main(String[] args) {
-        /*//构造一个小民————
+        /* 静态代理
+        //构造一个小民————
         ILawsuit xiaomin=new XiaoMin();
         //构造一个代理律师并将小民作为构造参数传递进去
         ILawsuit lawyer=new Lawyer(xiaomin);
@@ -17,8 +18,8 @@ public class Client {
         //完成诉讼
         lawyer.finish();*/
 
-
-        //构造一个小民————动态代理
+        //----动态代理
+        //构造一个小民
         ILawsuit xiaomin=new XiaoMin();
         //构造一个动态代理
         DynamicProxy proxy=new DynamicProxy(xiaomin);
